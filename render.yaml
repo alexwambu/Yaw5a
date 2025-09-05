@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: video-ai-backend
+    runtime: python
+    env: python
+    plan: free
+    buildCommand: ./build.sh
+    startCommand: ./start.sh
+    envVars:
+      - key: PORT
+        value: 10000
